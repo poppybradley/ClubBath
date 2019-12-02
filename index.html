@@ -4,6 +4,7 @@
 <!--==========================================-->
 <!--                   Head                   -->
 <!--==========================================-->
+
 <head>
     <title>ClubBath</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -13,6 +14,7 @@
 <!--==========================================-->
 <!--                   Body                   -->
 <!--==========================================-->
+
 <body>
     <h1>Welcome to ClubBath</h1>
 
@@ -20,12 +22,16 @@
 <!--                 Carousel                 -->
 <!--==========================================-->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
   </ol>
+
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="images/secondbridge.jpg" alt="The Second Bridge">
@@ -34,7 +40,16 @@
       <img class="d-block w-100" src="images/zerozero.jpg" alt="Zero Zero">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/thetub.JPG" alt="Score">
+      <img class="d-block w-100" src="images/thetub.jpg" alt="Score">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/moles.jpg" alt="Moles">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/ponana.jpg" alt="Po Na Na">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/revs.jpg" alt="Revs">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -50,6 +65,7 @@
 <!--==========================================-->
 <!--                 Button                   -->
 <!--==========================================-->
+
 <button type="button" class="btn btn-primary">Primary</button>
 
 <!--==========================================-->
@@ -58,10 +74,10 @@
 
     <img src="images/uni.jpg" alt="UoB" width="400px">
     <h3>What is ClubBath?</h3>
-    <p>ClubBath is UoB's 100% unofficial guide to nightlife in the our great city.</p>
-    <p>Whether you love a MNB or are more about The Big Cheese, you can rate your experience and share it with other club fans!</p>
+        <p>ClubBath is UoB's 100% unofficial guide to nightlife in the our great city.</p>
+        <p>Whether you love a MNB or are more about The Big Cheese, you can rate your experience and share it with other club fans!</p>
     <h2>OUR RATING SYSTEM</h2>
-    <p>When submitting an entry, 6 key elements are taken into account to give an overall score out of 10:</p>
+        <p>When submitting an entry, 6 key elements are taken into account to give an overall score out of 10:</p>
     <ul>
       <li>Music</li>
       <li>Size</li>
@@ -69,18 +85,53 @@
       <li>Location</li>
       <li>Toilets</li>
       <li>and most important of all,</li>
-        <h3>A SPECIAL MENTION</h3>
+      <li>A SPECIAL MENTION,</li>
     </ul>
 <p>something that really makes the night out (somewhat) memorable.</p>
 <p>So feel free to leave a submission below and let us know about your favourite club experiences.</p>
 
 <!--==========================================-->
+<!--                  Form                    -->
+<!--==========================================-->
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+    <label for="cname">Name of Club</label>
+    <input type="text" id="cname" name="clubname" placeholder="Name of club...">
+
+    <label for="Rating out of 10">Rating out of 10</label>
+    <select id="rating" name="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="review">Please write your review below:</label>
+    <textarea id="review" name="review" placeholder="Try to write a line per element of your night out :)" style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+<!--==========================================-->
 <!--                  Icons                   -->
 <!--==========================================-->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<a href="#" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-snapchat-ghost"></a>
+<a href="https://www.instagram.com/poppy.bradley/?hl=en" class="fa fa-instagram"></a>
+<a href="https://twitter.com/PoppyBradley" class="fa fa-twitter"></a>
+<a href="https://www.snapchat.com/add/poppylucy72" class="fa fa-snapchat-ghost"></a>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
