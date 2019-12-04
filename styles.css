@@ -1,35 +1,41 @@
 body {
-  font-family: arial;
+  background-color: #0022fc;
+  color: #fffc61;
+  font-family: "Comic Sans MS";
   margin: 0;
 }
 .carousel {
   width:640px;
   height:360px;
+  margin: 0 auto;
 }
 
 h1, h2, h3 {
 text-align: center;
+color: #fffc61;
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
 }
 
 /*<!--========================================-->
 <!--                  Form                    -->
-<!--==========================================-->
+<!--==========================================-->*/
 
-/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #0022fc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #0022fc;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -37,18 +43,20 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #8292ff;
 }
 
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #fffc61;
   padding: 20px;
 }
-/* Style all font awesome icons */
+
+/*<!--========================================-->
+<!--                  Icons                   -->
+<!--==========================================-->*/
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -57,27 +65,17 @@ input[type=submit]:hover {
   text-decoration: none;
   border-radius: 50%;
 }
-
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
-
-/* Set a specific color for each brand */
-
-/* Instagram */
 .fa-instagram {
 	background: #125688;
 	  color: white;
 }
-
-/* Twitter */
 .fa-twitter {
   background: #55ACEE;
   color: white;
 }
-
-/* Snapchat */
 .fa-snapchat-ghost {
   background: #fffc00;
   color: white;
